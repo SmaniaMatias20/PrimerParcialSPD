@@ -42,7 +42,7 @@ Proyecto:
 
 LINK AL VIDEO DEL PROCESO
 
-Primera parte: 
+Primera parte: https://youtu.be/yYK98TE8sIU?si=V80ck4MrTI66X6k4
 
 Segunda parte:
 
