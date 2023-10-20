@@ -38,4 +38,14 @@ la temperatura en un voltaje análogo.
 
 LINK AL PROYECTO
 
+Proyecto: 
+
 LINK AL VIDEO DEL PROCESO
+
+Primera parte: 
+
+Segunda parte:
+
+Tercera parte:
+
+
