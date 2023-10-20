@@ -38,7 +38,7 @@ la temperatura en un voltaje análogo.
 
 LINK AL PROYECTO
 
-Proyecto: 
+Proyecto: https://www.tinkercad.com/things/bCam4e4FVKc-parcial-domiciliario-3-smania-matias-1d/editel?sharecode=TInjdKW-koXgx7-hWdrOaVKr0mKQ8xfd7zH6mYGdqYs
 
 LINK AL VIDEO DEL PROCESO
 
@@ -46,6 +46,6 @@ Primera parte: https://youtu.be/yYK98TE8sIU?si=V80ck4MrTI66X6k4
 
 Segunda parte: https://youtu.be/X7aXXXHiZTI?si=M3VLnard5YTRQVdB
 
-Tercera parte: 
+Tercera parte: https://youtu.be/7YbOKDm_gdM?si=ItcBu6BMATZz3sSF
 
 
