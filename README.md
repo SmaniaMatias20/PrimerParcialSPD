@@ -44,8 +44,8 @@ LINK AL VIDEO DEL PROCESO
 
 Primera parte: https://youtu.be/yYK98TE8sIU?si=V80ck4MrTI66X6k4
 
-Segunda parte:
+Segunda parte: https://youtu.be/X7aXXXHiZTI?si=M3VLnard5YTRQVdB
 
-Tercera parte:
+Tercera parte: 
 
 
