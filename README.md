@@ -10,7 +10,7 @@ Integrantes
 Proyecto: Primer Parcial SPD
 
 ----------------------------
-IMAGEN
+Imagen
 ----------------------------
 
 Descripcion del proyecto
