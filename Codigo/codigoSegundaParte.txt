@@ -55,7 +55,6 @@ void setup()
 
 void loop()
 {	
-  	
   	temperatura = map(analogRead(TEMP),0,1023,-50,450);
   	motorEncenderApagar(temperatura);
   	
@@ -74,6 +73,16 @@ void loop()
 
 int botonPresionado(void) 
 {
+  /*
+    Brief: 
+        Verifica el boton presionado.
+    Parametros:
+        - Sin parametros. 
+    Retorno:
+        - SUBE.
+        - BAJA.
+        - 0.
+    */
 	sube = digitalRead(SUBE);
   	baja = digitalRead(BAJA);
   
@@ -99,6 +108,14 @@ int botonPresionado(void)
 
 void prendeDigito(int digito)
 {
+  	/*
+    Brief: 
+        Enciende los display.
+    Parametros:
+        - digito (int): El display que va a encender. 
+    Retorno:
+        - Sin retorno.
+    */
 	if (digito == UNIDAD)
     {
       digitalWrite(UNIDAD, LOW);
@@ -119,8 +136,16 @@ void prendeDigito(int digito)
 	
 }
 
-void imprimirCuenta(int cuenta) // Prender UNIDADES Y DECENAS
+void imprimirCuenta(int cuenta) 
 {
+  	/*
+    Brief: 
+        Muestra los numeros en los display.
+    Parametros:
+        - cuenta (int): El numero a mostrar. 
+    Retorno:
+        - Sin retorno.
+    */
 	prendeDigito(APAGADOS);
   	imprimirDigito(cuenta / 10);
     prendeDigito(DECENA);
@@ -131,6 +156,14 @@ void imprimirCuenta(int cuenta) // Prender UNIDADES Y DECENAS
 
 void imprimirDigito(int digito)
 {
+  	/*
+    Brief: 
+        Selecciona el numero a imprimir.
+    Parametros:
+        - digito (int): El numero a imprimir. 
+    Retorno:
+        - Sin retorno.
+    */
 	digitalWrite(A, LOW);
   	digitalWrite(B, LOW);
   	digitalWrite(C, LOW);
@@ -238,6 +271,15 @@ void imprimirDigito(int digito)
 
 bool validarNumeroPrimo(int numero)
 {	
+  	/*
+    Brief: 
+        Valida numeros primos.
+    Parametros:
+        - numero (int): El numero a validar. 
+    Retorno:
+        - True.
+        - False.
+    */
   	int contador = 0;
 	for(int i = 1; i <= numero; i++)
     {
@@ -260,12 +302,28 @@ bool validarNumeroPrimo(int numero)
 
 void mostrarContador()
 {
+  /*
+    Brief: 
+        Muestra el contador en los display.
+    Parametros:
+        - Sin parametros. 
+    Retorno:
+        - Sin retorno.
+    */
   int contadorDigito = contar();
   imprimirCuenta(contadorDigito);
 }
 
 int contar()
 {
+  /*
+    Brief: 
+        Cuenta del 0 al 99.
+    Parametros:
+        - Sin parametros. 
+    Retorno:
+        - contadorDigito.
+    */
   int boton = botonPresionado();
   
   if (boton == SUBE)
@@ -289,6 +347,14 @@ int contar()
 
 void mostrarNumerosPrimos()
 {
+  /*
+    Brief: 
+        Muestra los numeros primos en los display.
+    Parametros:
+        - Sin parametros. 
+    Retorno:
+        - Sin retorno.
+    */
   int contadorDigito = contar();
   
   bool validacion = validarNumeroPrimo(contadorDigito);
@@ -307,6 +373,14 @@ void mostrarNumerosPrimos()
 
 void motorEncenderApagar(float temperatura)
 {
+  /*
+    Brief: 
+        Enciende o apaga el motor, de acuerdo a la temperatura.
+    Parametros:
+        - temperatura (float): La temperatura a evaluar. 
+    Retorno:
+        - Sin retorno.
+    */
   if(temperatura > 25 && temperatura < 50)
     {
       digitalWrite(MOTOR, HIGH);

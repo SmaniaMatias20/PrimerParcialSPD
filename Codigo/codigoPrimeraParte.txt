@@ -1,5 +1,5 @@
 // C++ code
-// Smania Matias
+// Smania Matias 1D
 
 #define A 12
 #define B 13
@@ -46,7 +46,7 @@ void setup()
 
 void loop()
 {
-  	// Obtiene el boton presionado y ejecuta una accion especifica
+  	
     int boton = botonPresionado();
   	if (boton == SUBE)
     {
@@ -73,11 +73,22 @@ void loop()
 
 int botonPresionado(void) 
 {
+  	/*
+    Brief: 
+        Verifica el boton presionado.
+    Parametros:
+        - Sin parametros. 
+    Retorno:
+        - SUBE.
+        - BAJA.
+        - RESET.
+        - 0.
+    */
 	sube = digitalRead(SUBE);
   	baja = digitalRead(BAJA);
   	reset = digitalRead(RESET);
   	
-  	// Pregunto si la tecla no habia sido presionada.
+  	
   	if (sube)  
       subePrevia = 1;
   	if (baja)
@@ -85,7 +96,6 @@ int botonPresionado(void)
   	if (reset)
       resetPrevia = 1;
   	
-  	// Si presionamos el boton retornamos el mismo. 
   	if (sube == 0 && sube != subePrevia)
     {
       subePrevia = sube;
@@ -108,6 +118,14 @@ int botonPresionado(void)
 
 void prendeDigito(int digito)
 {
+  	/*
+    Brief: 
+        Enciende los display.
+    Parametros:
+        - digito (int): El display que va a encender. 
+    Retorno:
+        - Sin retorno.
+    */
 	if (digito == UNIDAD)
     {
       digitalWrite(UNIDAD, LOW);
@@ -128,8 +146,16 @@ void prendeDigito(int digito)
 	
 }
 
-void imprimirCuenta(int cuenta) // Prender UNIDADES Y DECENAS
+void imprimirCuenta(int cuenta) 
 {
+  	/*
+    Brief: 
+        Muestra los numeros en los display.
+    Parametros:
+        - cuenta (int): El numero a mostrar. 
+    Retorno:
+        - Sin retorno.
+    */
 	prendeDigito(APAGADOS);
   	imprimirDigito(cuenta / 10);
     prendeDigito(DECENA);
@@ -140,6 +166,14 @@ void imprimirCuenta(int cuenta) // Prender UNIDADES Y DECENAS
 
 void imprimirDigito(int digito)
 {
+  	/*
+    Brief: 
+        Selecciona el numero a imprimir.
+    Parametros:
+        - digito (int): El numero a imprimir. 
+    Retorno:
+        - Sin retorno.
+    */
 	digitalWrite(A, LOW);
   	digitalWrite(B, LOW);
   	digitalWrite(C, LOW);
