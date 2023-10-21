@@ -12,8 +12,8 @@ Proyecto: Primer Parcial SPD
 
 
 Imagen
-![](https://github.com/SmaniaMatias20/PrimerParcialSPD/blob/master/Imagenes/Parte%203.png)
 ----------------------------
+![](https://github.com/SmaniaMatias20/PrimerParcialSPD/blob/master/Imagenes/Parte%203.png)
 
 Descripcion del proyecto
 
